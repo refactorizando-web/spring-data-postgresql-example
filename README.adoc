@@ -1,0 +1,26 @@
+= Spring Data Example with PostgreSQL =
+{localdatetime}
+:toc:
+:doctype: book
+:docinfo:
+
+= Introduction =
+The main object of this service is make a connection with postgreSql using Spring Data.
+
+= How does it run?
+
+
+== Run docker
+
+```
+docker run --network host --name postgres -e POSTGRES_PASSWORD=postgres -d postgres
+
+```
+
+== Run the application
+
+```
+mvn spring-boot:run
+
+```
+
