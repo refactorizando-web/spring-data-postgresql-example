@@ -5,6 +5,8 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.UUID;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 
 @Table
 @Entity
@@ -24,5 +26,13 @@ public class Car {
 
     @Column
     private String color;
+
+    @Column(name = "created_date")
+    @CreatedDate
+    private long createdDate;
+
+    @Column(name = "modified_date")
+    @LastModifiedDate
+    private long modifiedDate;
 
 }
