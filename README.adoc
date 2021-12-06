@@ -10,8 +10,8 @@ The main object of this service is make a connection with postgreSql using Sprin
 And use Testcontainers to verify our application with Integration test.
 If you want more information you can take a look into:
 
-PostgreSQL with Docker: https://refactorizando.com/ejemplo-spring-data-postgresql-docker/
-Testcontaines: https://refactorizando.com/test-integracion-spring-boot-testcontainers
+* PostgreSQL with Docker: https://refactorizando.com/ejemplo-spring-data-postgresql-docker/
+* Testcontaines: https://refactorizando.com/test-integracion-spring-boot-testcontainers
 
 
 = How does it run?
