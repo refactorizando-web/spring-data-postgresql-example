@@ -1,1 +1,26 @@
-spring.datasource.url: jdbc:tc:postgresql:11.1:///integration-tests-db
+
+spring:
+  application:
+    name: postgresql-example
+  data:
+    jpa.repositories.enabled: true
+  datasource:
+    url: jdbc:tc:postgresql:11.1:///integration-tests-db
+  jpa:
+    show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    hibernate:
+      ddl-auto: update
+      use-new-id-generator-mappings: true
+      generate-ddl: true
+    properties:
+      hibernate:
+        jdbc.lob.non_contextual_creation: true
+        format_sql: true
+        show_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc.batch_size: 10
+        order_updates: true
+        batch_versioned_data: true
+
+          

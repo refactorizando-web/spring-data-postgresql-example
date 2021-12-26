@@ -43,6 +43,13 @@
 			<version>${postgresql.version}</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/net.ttddyy/datasource-proxy -->
+		<dependency>
+			<groupId>net.ttddyy</groupId>
+			<artifactId>datasource-proxy</artifactId>
+			<version>1.5.1</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.testcontainers</groupId>
 			<artifactId>junit-jupiter</artifactId>

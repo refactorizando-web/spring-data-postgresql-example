@@ -22,3 +22,6 @@ spring:
         show_sql: true
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc.batch_size: 10
+        order_updates: true
+        batch_versioned_data: true

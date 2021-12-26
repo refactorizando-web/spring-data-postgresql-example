@@ -12,9 +12,20 @@ If you want more information you can take a look into:
 
 * PostgreSQL with Docker: https://refactorizando.com/ejemplo-spring-data-postgresql-docker/
 * Testcontaines: https://refactorizando.com/test-integracion-spring-boot-testcontainers
+* Save in Batch with Hibernate: https://refactorizando.com/insercciones-actualizaciones-batch-hibernate
 
+= How does it run? =
 
-= How does it run?
+== Hibernate Batch
+
+In this example we are using hibernate batch to allow save in batch mode in database. To enable this
+feature you need to add the next properties in your properties file:
+
+```
+         jdbc.batch_size: 10
+         order_updates: true
+         batch_versioned_data: true
+```
 
 == Run docker
 
