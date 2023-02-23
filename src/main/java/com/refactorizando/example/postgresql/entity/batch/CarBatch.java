@@ -1,5 +1,6 @@
 package com.refactorizando.example.postgresql.entity.batch;
 
+import com.refactorizando.example.postgresql.entity.AuditEntity;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,7 +15,7 @@ import org.springframework.data.annotation.LastModifiedDate;
 @Entity
 @Getter
 @Setter
-public class CarBatch {
+public class CarBatch extends AuditEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -28,14 +29,6 @@ public class CarBatch {
 
     @Column
     private String color;
-
-    @Column(name = "created_date")
-    @CreatedDate
-    private long createdDate;
-
-    @Column(name = "modified_date")
-    @LastModifiedDate
-    private long modifiedDate;
 
     @ManyToOne
     private Brand brand;

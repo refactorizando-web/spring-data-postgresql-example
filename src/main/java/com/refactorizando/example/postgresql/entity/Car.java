@@ -12,7 +12,7 @@ import org.springframework.data.annotation.LastModifiedDate;
 @Entity
 @Getter
 @Setter
-public class Car {
+public class Car extends AuditEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -27,12 +27,5 @@ public class Car {
     @Column
     private String color;
 
-    @Column(name = "created_date")
-    @CreatedDate
-    private long createdDate;
-
-    @Column(name = "modified_date")
-    @LastModifiedDate
-    private long modifiedDate;
 
 }
