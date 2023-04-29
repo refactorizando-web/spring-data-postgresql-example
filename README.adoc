@@ -11,8 +11,8 @@ And use Testcontainers to verify our application with Integration test.
 If you want more information you can take a look into:
 
 * PostgreSQL with Docker: https://refactorizando.com/ejemplo-spring-data-postgresql-docker/
-* Testcontaines: https://refactorizando.com/test-integracion-spring-boot-testcontainers
-* Testcontaines: https://refactorizando.com/en/testcontainers-example-spring-boot
+* Testcontaines: [Spanish] https://refactorizando.com/test-integracion-spring-boot-testcontainers
+* Testcontaines: [English] https://refactorizando.com/en/testcontainers-example-spring-boot
 * Save in Batch with Hibernate: https://refactorizando.com/insercciones-actualizaciones-batch-hibernate
 
 = How does it run? =
